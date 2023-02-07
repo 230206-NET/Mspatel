@@ -1,0 +1,15 @@
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\bin\Debug\net7.0\firstDotnet.exe
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\bin\Debug\net7.0\firstDotnet.deps.json
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\bin\Debug\net7.0\firstDotnet.runtimeconfig.json
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\bin\Debug\net7.0\firstDotnet.dll
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\bin\Debug\net7.0\firstDotnet.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.csproj.AssemblyReference.cache
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.AssemblyInfoInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.AssemblyInfo.cs
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.csproj.CoreCompileInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.dll
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\refint\firstDotnet.dll
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\firstDotnet.genruntimeconfig.cache
+C:\Users\mspat\Documents\Revature\Mspatel\firstDotnet\obj\Debug\net7.0\ref\firstDotnet.dll
