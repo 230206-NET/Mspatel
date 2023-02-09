@@ -1,0 +1,15 @@
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\bin\Debug\net7.0\BudgetApp.exe
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\bin\Debug\net7.0\BudgetApp.deps.json
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\bin\Debug\net7.0\BudgetApp.runtimeconfig.json
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\bin\Debug\net7.0\BudgetApp.dll
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\bin\Debug\net7.0\BudgetApp.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.csproj.AssemblyReference.cache
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.AssemblyInfoInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.AssemblyInfo.cs
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.csproj.CoreCompileInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.dll
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\refint\BudgetApp.dll
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\BudgetApp.genruntimeconfig.cache
+C:\Users\mspat\Documents\Revature\Mspatel\BudgetApp\obj\Debug\net7.0\ref\BudgetApp.dll
