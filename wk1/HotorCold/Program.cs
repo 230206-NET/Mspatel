@@ -2,9 +2,9 @@ using System;
 
 namespace HotorCold
 {
-	public class HOC
+	public class MainMenu
 	{
-		public static void Main(string[] args)
+		public void Start()
 		{
 			Console.WriteLine("Hello");
 

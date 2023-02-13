@@ -13,3 +13,15 @@ C:\Users\mspat\Documents\Revature\Mspatel\HotorCold\obj\Debug\net7.0\refint\Hoto
 C:\Users\mspat\Documents\Revature\Mspatel\HotorCold\obj\Debug\net7.0\HotorCold.pdb
 C:\Users\mspat\Documents\Revature\Mspatel\HotorCold\obj\Debug\net7.0\HotorCold.genruntimeconfig.cache
 C:\Users\mspat\Documents\Revature\Mspatel\HotorCold\obj\Debug\net7.0\ref\HotorCold.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\bin\Debug\net7.0\HotorCold.deps.json
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\bin\Debug\net7.0\HotorCold.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\bin\Debug\net7.0\HotorCold.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\HotorCold.csproj.AssemblyReference.cache
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\HotorCold.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\HotorCold.AssemblyInfoInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\HotorCold.AssemblyInfo.cs
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\HotorCold.csproj.CoreCompileInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\HotorCold.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\refint\HotorCold.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\HotorCold.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\HotorCold\obj\Debug\net7.0\ref\HotorCold.dll

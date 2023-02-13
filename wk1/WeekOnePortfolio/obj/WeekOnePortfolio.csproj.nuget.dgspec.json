@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\WeekOnePortfolio\\WeekOnePortfolio.csproj": {}
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\WeekOnePortfolio\\WeekOnePortfolio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\Connect4\\Connect4\\Connect4.csproj": {
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\BudgetApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\Connect4\\Connect4\\Connect4.csproj",
-        "projectName": "Connect4",
-        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\Connect4\\Connect4\\Connect4.csproj",
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\BudgetApp.csproj",
+        "projectName": "BudgetApp",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\BudgetApp.csproj",
         "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\Connect4\\Connect4\\obj\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -57,14 +57,332 @@
         }
       }
     },
-    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\WeekOnePortfolio\\WeekOnePortfolio.csproj": {
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\WeekOnePortfolio\\WeekOnePortfolio.csproj",
-        "projectName": "WeekOnePortfolio",
-        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\WeekOnePortfolio\\WeekOnePortfolio.csproj",
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj",
+        "projectName": "coinflipper",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj",
         "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\WeekOnePortfolio\\obj\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\Connect4\\Connect4\\Connect4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\Connect4\\Connect4\\Connect4.csproj",
+        "projectName": "Connect4",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\Connect4\\Connect4\\Connect4.csproj",
+        "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\Connect4\\Connect4\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj",
+        "projectName": "firstDotnet",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj",
+        "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\FizzBuzz\\FizzBuzz.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\FizzBuzz\\FizzBuzz.csproj",
+        "projectName": "FizzBuzz",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\FizzBuzz\\FizzBuzz.csproj",
+        "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\FizzBuzz\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\HotorCold.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\HotorCold.csproj",
+        "projectName": "HotorCold",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\HotorCold.csproj",
+        "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\ToDoApp\\ToDoApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\ToDoApp\\ToDoApp.csproj",
+        "projectName": "ToDoApp",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\ToDoApp\\ToDoApp.csproj",
+        "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\ToDoApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\WeekOnePortfolio\\WeekOnePortfolio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\WeekOnePortfolio\\WeekOnePortfolio.csproj",
+        "projectName": "WeekOnePortfolio",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\WeekOnePortfolio\\WeekOnePortfolio.csproj",
+        "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\WeekOnePortfolio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -79,8 +397,26 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\Connect4\\Connect4\\Connect4.csproj": {
-                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\Connect4\\Connect4\\Connect4.csproj"
+              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\BudgetApp.csproj": {
+                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\BudgetApp.csproj"
+              },
+              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj": {
+                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj"
+              },
+              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\Connect4\\Connect4\\Connect4.csproj": {
+                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\Connect4\\Connect4\\Connect4.csproj"
+              },
+              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj": {
+                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj"
+              },
+              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\FizzBuzz\\FizzBuzz.csproj": {
+                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\FizzBuzz\\FizzBuzz.csproj"
+              },
+              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\HotorCold.csproj": {
+                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\HotorCold.csproj"
+              },
+              "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\ToDoApp\\ToDoApp.csproj": {
+                "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\ToDoApp\\ToDoApp.csproj"
               }
             }
           }

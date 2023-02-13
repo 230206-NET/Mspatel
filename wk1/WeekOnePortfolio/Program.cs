@@ -1,4 +1,10 @@
-﻿using TicTacToe;
+﻿using DotNetFirst;
+using CoinFlipper;
+using HotorCold;
+using FizzBuzz;
+using ToDoApp;
+using BudgetApp;
+using TicTacToe;
 
 while(true) {
     Console.WriteLine("Week One Portfolio:");
@@ -17,18 +23,22 @@ while(true) {
 
         switch(input) {
             case "1":
-               // new FirstDotNet.MainMenu().Start();
+                new DotNetFirst.MainMenu().Start();
             break;
             case "2":
-              //  Console.WriteLine("Going to run coin flipper");
-                // run coin flipper...
+                new CoinFlipper.MainMenu().Start();
+            break;
+            case "3":
+                new HotorCold.MainMenu().Start();
             break;
             case "4":
-               // new FizzBuzz.MainMenu().Start();
+                new FizzBuzz.MainMenu().Start();
+            break;
+            case "5":
+                new ToDoApp.MainMenu().Start();
             break;
             case "6":
-                // You can't instantiate Expense class here because it is internal, and intended for use only within the same project
-               // new BudgetApp.MainMenu().Start();
+                new BudgetApp.MainMenu().Start();
             break;
             case "7":
                 Console.WriteLine("Going to run TicTacToe Game");

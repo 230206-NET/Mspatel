@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\coinflipper\\coinflipper.csproj": {}
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\coinflipper\\coinflipper.csproj": {
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\coinflipper\\coinflipper.csproj",
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj",
         "projectName": "coinflipper",
-        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\coinflipper\\coinflipper.csproj",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\coinflipper.csproj",
         "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\coinflipper\\obj\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\coinflipper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"

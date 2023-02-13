@@ -8,15 +8,51 @@
     ".NETCoreApp,Version=v7.0": {
       "WeekOnePortfolio/1.0.0": {
         "dependencies": {
-          "Connect4": "1.0.0"
+          "BudgetApp": "1.0.0",
+          "Connect4": "1.0.0",
+          "FizzBuzz": "1.0.0",
+          "HotorCold": "1.0.0",
+          "ToDoApp": "1.0.0",
+          "coinflipper": "1.0.0",
+          "firstDotnet": "1.0.0"
         },
         "runtime": {
           "WeekOnePortfolio.dll": {}
         }
       },
+      "BudgetApp/1.0.0": {
+        "runtime": {
+          "BudgetApp.dll": {}
+        }
+      },
+      "coinflipper/1.0.0": {
+        "runtime": {
+          "coinflipper.dll": {}
+        }
+      },
       "Connect4/1.0.0": {
         "runtime": {
           "Connect4.dll": {}
+        }
+      },
+      "firstDotnet/1.0.0": {
+        "runtime": {
+          "firstDotnet.dll": {}
+        }
+      },
+      "FizzBuzz/1.0.0": {
+        "runtime": {
+          "FizzBuzz.dll": {}
+        }
+      },
+      "HotorCold/1.0.0": {
+        "runtime": {
+          "HotorCold.dll": {}
+        }
+      },
+      "ToDoApp/1.0.0": {
+        "runtime": {
+          "ToDoApp.dll": {}
         }
       }
     }
@@ -27,7 +63,37 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BudgetApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "coinflipper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Connect4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "firstDotnet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FizzBuzz/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HotorCold/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDoApp/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

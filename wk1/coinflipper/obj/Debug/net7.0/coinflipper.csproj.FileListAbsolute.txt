@@ -13,3 +13,15 @@ C:\Users\mspat\Documents\Revature\Mspatel\coinflipper\obj\Debug\net7.0\refint\co
 C:\Users\mspat\Documents\Revature\Mspatel\coinflipper\obj\Debug\net7.0\coinflipper.pdb
 C:\Users\mspat\Documents\Revature\Mspatel\coinflipper\obj\Debug\net7.0\coinflipper.genruntimeconfig.cache
 C:\Users\mspat\Documents\Revature\Mspatel\coinflipper\obj\Debug\net7.0\ref\coinflipper.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\coinflipper.csproj.AssemblyReference.cache
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\coinflipper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\coinflipper.AssemblyInfoInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\coinflipper.AssemblyInfo.cs
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\coinflipper.csproj.CoreCompileInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\coinflipper.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\refint\coinflipper.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\coinflipper.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\bin\Debug\net7.0\coinflipper.deps.json
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\bin\Debug\net7.0\coinflipper.dll
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\bin\Debug\net7.0\coinflipper.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\wk1\coinflipper\obj\Debug\net7.0\ref\coinflipper.dll

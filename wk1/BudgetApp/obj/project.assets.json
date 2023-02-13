@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\BudgetApp\\BudgetApp.csproj",
+      "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\BudgetApp.csproj",
       "projectName": "BudgetApp",
-      "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\BudgetApp\\BudgetApp.csproj",
+      "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\BudgetApp.csproj",
       "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\BudgetApp\\obj\\",
+      "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\BudgetApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"

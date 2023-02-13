@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\firstDotnet\\firstDotnet.csproj": {}
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\firstDotnet\\firstDotnet.csproj": {
+    "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\firstDotnet\\firstDotnet.csproj",
+        "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj",
         "projectName": "firstDotnet",
-        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\firstDotnet\\firstDotnet.csproj",
+        "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\firstDotnet.csproj",
         "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\firstDotnet\\obj\\",
+        "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\firstDotnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"

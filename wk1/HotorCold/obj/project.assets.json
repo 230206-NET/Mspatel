@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\HotorCold\\HotorCold.csproj",
+      "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\HotorCold.csproj",
       "projectName": "HotorCold",
-      "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\HotorCold\\HotorCold.csproj",
+      "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\HotorCold.csproj",
       "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\HotorCold\\obj\\",
+      "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\wk1\\HotorCold\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mspat\\AppData\\Roaming\\NuGet\\NuGet.Config"
