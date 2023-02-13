@@ -1,8 +1,8 @@
 ﻿Console.WriteLine("HangMan Game");
 
-String[] wordlist = new String[] {"world", "pizza", "father", "mother", "game"};
+String[] wordlist = new String[] {"world", "pizza", "father", "mother", "game", "zebra", "football", "kingdom", "house", "positive"};
 var rand = new Random().Next(wordlist.Length);
-Console.WriteLine(wordlist[rand]);
+//Console.WriteLine(wordlist[rand]);
 int lives = 7;
 string mysterywordfiller = wordlist[rand];
 char[] mw = new char[mysterywordfiller.Length];
