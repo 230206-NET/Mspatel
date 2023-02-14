@@ -1,0 +1,12 @@
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\bin\Debug\net7.0\Login.deps.json
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\bin\Debug\net7.0\Login.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\bin\Debug\net7.0\Login.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\Login.csproj.AssemblyReference.cache
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\Login.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\Login.AssemblyInfoInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\Login.AssemblyInfo.cs
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\Login.csproj.CoreCompileInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\Login.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\refint\Login.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\Login.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Login\obj\Debug\net7.0\ref\Login.dll
