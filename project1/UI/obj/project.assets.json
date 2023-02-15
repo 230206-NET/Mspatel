@@ -32,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\UI\\project1.csproj",
-      "projectName": "project1",
-      "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\UI\\project1.csproj",
+      "projectUniqueName": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\UI\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\mspat\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\UI\\obj\\",
       "projectStyle": "PackageReference",
