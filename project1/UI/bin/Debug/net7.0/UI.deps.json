@@ -8,15 +8,30 @@
     ".NETCoreApp,Version=v7.0": {
       "UI/1.0.0": {
         "dependencies": {
-          "Login": "1.0.0"
+          "DataAccess": "1.0.0",
+          "Login": "1.0.0",
+          "Models": "1.0.0"
         },
         "runtime": {
           "UI.dll": {}
         }
       },
+      "DataAccess/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "DataAccess.dll": {}
+        }
+      },
       "Login/1.0.0": {
         "runtime": {
           "Login.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
         }
       }
     }
@@ -27,7 +42,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Login/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

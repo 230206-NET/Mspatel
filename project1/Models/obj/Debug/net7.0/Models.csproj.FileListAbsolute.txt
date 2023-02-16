@@ -1,0 +1,12 @@
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\bin\Debug\net7.0\Models.deps.json
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\bin\Debug\net7.0\Models.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\bin\Debug\net7.0\Models.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\Models.csproj.AssemblyReference.cache
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\Models.AssemblyInfoInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\Models.AssemblyInfo.cs
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\Models.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\refint\Models.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\Models.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\project1\Models\obj\Debug\net7.0\ref\Models.dll
