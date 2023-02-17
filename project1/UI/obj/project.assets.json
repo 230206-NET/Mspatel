@@ -34,6 +34,20 @@
         "runtime": {
           "bin/placeholder/Models.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DataAccess": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -52,13 +66,19 @@
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "DataAccess >= 1.0.0",
       "Login >= 1.0.0",
-      "Models >= 1.0.0"
+      "Models >= 1.0.0",
+      "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -94,6 +114,9 @@
             },
             "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\Models\\Models.csproj"
+            },
+            "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\Services\\Services.csproj"
             }
           }
         }

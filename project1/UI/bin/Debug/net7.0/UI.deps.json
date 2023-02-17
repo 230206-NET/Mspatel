@@ -10,7 +10,8 @@
         "dependencies": {
           "DataAccess": "1.0.0",
           "Login": "1.0.0",
-          "Models": "1.0.0"
+          "Models": "1.0.0",
+          "Services": "1.0.0"
         },
         "runtime": {
           "UI.dll": {}
@@ -33,6 +34,15 @@
         "runtime": {
           "Models.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "DataAccess": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {}
+        }
       }
     }
   },
@@ -53,6 +63,11 @@
       "sha512": ""
     },
     "Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,10 +1,33 @@
 ﻿using DataAccess;
+using Services;
 namespace UI;
     public class MainMenu
     {
-        private List<TicketSession> tic = new();
+        private readonly TicketService _service;
+        //private List<TicketSession> tic = new();
+        public MainMenu(TicketService service) {
+        _service = service;
+        }
         public void Start()
         {
+            // Login Screen
+            LoginInfo log = new LoginInfo();
+
+            Console.WriteLine("Username: ");
+            string user = Console.ReadLine();
+            Console.WriteLine("Password: ");
+            string pass = Console.ReadLine();
+
+            log.Username = user;
+            log.Password = pass;
+
+            Console.WriteLine("User : " + user);
+            Console.WriteLine("Username : " + log.Username);
+
+            Console.WriteLine("Pass : " + pass);
+            Console.WriteLine("Password : " + log.Password);
+
+            // After Lpgin
             while(true) 
             {
                 Console.WriteLine("Expense Tracker:");
@@ -24,6 +47,7 @@ namespace UI;
                     
                     case "2":
                         // ToDo: Modify Existing Workout
+                        SearchTicketsByName();
                     break;
                     case "3":
                         // TODO: Veiw all tickets
@@ -41,6 +65,17 @@ namespace UI;
                         Console.WriteLine("I don't understand your input");
                     break;
                 }
+            }
+        }
+        private void SearchTicketsByName() 
+        {
+            Console.WriteLine("Which Ticket would you like to serach for?");
+            string input = Console.ReadLine();
+
+            List<TicketSession> sessions = _service.SearchTicketsByName(input);
+
+            foreach(TicketSession s in sessions) {
+                Console.WriteLine(s);
             }
         }
         private void CreateNewTicket()
@@ -96,20 +131,3 @@ namespace UI;
             Console.WriteLine(session);
         }
     }
-
-
-// LoginInfo log = new LoginInfo();
-
-            // Console.WriteLine("Username: ");
-            // string user = Console.ReadLine();
-            // Console.WriteLine("Password: ");
-            // string pass = Console.ReadLine();
-
-            // log.Username = user;
-            // log.Password = pass;
-
-            // Console.WriteLine("User : " + user);
-            // Console.WriteLine("Username : " + log.Username);
-
-            // Console.WriteLine("Pass : " + pass);
-            // Console.WriteLine("Password : " + log.Password);
