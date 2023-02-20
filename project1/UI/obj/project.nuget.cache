@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tAqwu8iW8krlR9QJe98YHdHYo68KKn39qAqkqQjq/kaXZKFb/PpmfqPrgdWjVPxE1JRFX5uJPaK+VBVzFXiuHw==",
+  "dgSpecHash": "aNI9G32WWaGf1XIiRE+CxWsaGbBRUKYmim4qOxEFVi9BhqCDZCNmk7BYWQUgjF7PBGMMX9dQuveeqCUXBiyCvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\UI\\UI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mspat\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
+    "C:\\Users\\mspat\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512",
+    "C:\\Users\\mspat\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

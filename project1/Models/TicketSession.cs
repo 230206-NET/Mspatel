@@ -1,6 +1,6 @@
 using Models.CustomException;
 using System.Text;
-
+using Serilog;
 namespace Models;
     public class TicketSession
     {
@@ -18,6 +18,7 @@ namespace Models;
             }
             set{
                 if(value.Length >= 100){
+                    Log.Warning("Models: assigning name to new ticket session: name length too long");
                     throw new ArgumentLengthException("Name must be less than 100 characters");
                 }
                 if(!string.IsNullOrWhiteSpace(value)){

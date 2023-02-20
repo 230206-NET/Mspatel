@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ulQpwOjXd0Oh+SVtrF4IZhPAhxToBoBPoEGdpkcWlI34vm2ibsKkqHpAOL+fhrTdq9QEzybv9/11UYTdSE9Mxw==",
+  "dgSpecHash": "KRJNQAj4UJIeOaG0tsBHwzSwkuzhaPtbvYZznzPSQqOQASobL2ypiueCNN8UUtsc9YEDWNHvhrEEvErgXpWiAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\Services\\Services.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mspat\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512"
+  ],
   "logs": []
 }

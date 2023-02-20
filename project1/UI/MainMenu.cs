@@ -127,7 +127,7 @@ namespace UI;
                 if(more.ToLower()[0] == 'n') break;
             }
 
-            new FileStorage().CreateNewSession(session);
+            _service.CreateNewSession(session);
             Console.WriteLine(session);
         }
     }

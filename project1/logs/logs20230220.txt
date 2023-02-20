@@ -1,0 +1,7 @@
+2023-02-20 13:37:45.722 -06:00 [INF] Application Starting...
+2023-02-20 13:37:45.758 -06:00 [INF] Instantiating File Storage Class
+2023-02-20 13:38:20.861 -06:00 [INF] File Storage: creating a new ticket session
+2023-02-20 13:38:20.862 -06:00 [INF] File Storage: Retrieving all ticket sessions
+2023-02-20 13:38:27.892 -06:00 [INF] File Storage: Retrieving all ticket sessions
+2023-02-20 13:38:39.624 -06:00 [INF] Instantiating File Storage Class
+2023-02-20 13:38:39.626 -06:00 [INF] File Storage: Retrieving all ticket sessions

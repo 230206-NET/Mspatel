@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "onMQGlhMHVgSVSVXwt73SYW2dBxpYNST7YS6OHTbYFw1lDlpJegqJ00EVbGZhD8bY9nsm/cYjcXVXKvo6DgHbQ==",
+  "dgSpecHash": "LuRy59NSkTwjuhimR1hIoTdMRNZULPThh81wbt05Fjj4WguwdGQ+8K4gmdn+UIlEcqxmbg+tqCK23yzL3+qk0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\mspat\\Documents\\Revature\\Mspatel\\project1\\DataAccess\\DataAccess.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mspat\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512"
+  ],
   "logs": []
 }

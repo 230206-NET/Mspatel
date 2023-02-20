@@ -22,3 +22,6 @@ C:\Users\mspat\Documents\Revature\Mspatel\project1\UI\bin\Debug\net7.0\DataAcces
 C:\Users\mspat\Documents\Revature\Mspatel\project1\UI\bin\Debug\net7.0\DataAccess.pdb
 C:\Users\mspat\Documents\Revature\Mspatel\project1\UI\bin\Debug\net7.0\Services.dll
 C:\Users\mspat\Documents\Revature\Mspatel\project1\UI\bin\Debug\net7.0\Services.pdb
+C:\Users\mspat\Documents\Revature\Mspatel\project1\UI\bin\Debug\net7.0\Serilog.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\UI\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\mspat\Documents\Revature\Mspatel\project1\UI\bin\Debug\net7.0\Serilog.Sinks.File.dll
