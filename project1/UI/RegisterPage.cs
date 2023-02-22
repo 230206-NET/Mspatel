@@ -9,6 +9,7 @@ public class RegisterPage
     public RegisterPage(){
         while(true)
         {
+            Console.WriteLine();
             Console.WriteLine("Account Type");
             Console.WriteLine("[1] Create New Employee Account");
             Console.WriteLine("[2] Create New Manager Account");
@@ -44,9 +45,11 @@ public class RegisterPage
         Console.WriteLine("Enter your Account Password");
         string? password = Console.ReadLine()!;
         Console.WriteLine("Creating New Account....");
+        Console.WriteLine();
         file.CreateNewUser(new User(username, password, firstName, lastName, AccountType));
         file.createUserinDB(new User(username, password, firstName, lastName, AccountType));
         Console.WriteLine("Account Created Returning to Front Screen\n");
+        Console.WriteLine();
     }
     public bool checkForSameUsername(string userName)
     {

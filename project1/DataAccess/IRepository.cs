@@ -20,4 +20,7 @@ public interface IRepository
     void createUserinDB(User user);
     User getUserinDB(string username);
     void createERTinDB(ERT ert);
+    List<ERT> GetAllTicketsByUsername(string username, List<ERT> ert);
+    List<ERT> GetAllPendingERT(List<ERT> ert);
+    void updateTicketStatusinDB(string username, DateTime dt, string status);
 }

@@ -11,12 +11,13 @@ public class LoginPage
     public LoginPage(){
         while(true)
         {
+            Console.WriteLine();
             Console.WriteLine("Account Type");
             Console.WriteLine("[1] Login For Employee Account");
             Console.WriteLine("[2] Login For Manager Account");
 
             string? input = Console.ReadLine();
-            Console.WriteLine(input);
+            //Console.WriteLine(input);
             if(input == "1")
             {
                     AccountType = "Employee";
@@ -32,18 +33,22 @@ public class LoginPage
             }
         }
 
+        Console.WriteLine();
         Console.WriteLine("Enter your Username: ");
         string? username = Console.ReadLine();
         Console.WriteLine("Enter your Password: ");
         string? password = Console.ReadLine();
         Console.WriteLine("Matching Login Information....");
+        Console.WriteLine();
         bool userin = UserCredSame(username, password, AccountType);
         if(userin == true) 
         {
+            Console.WriteLine();
             Console.WriteLine("Login and Test Worked");
         }
         if(userin == false)
         {
+            Console.WriteLine();
             Console.WriteLine("No Account Found Matching this Username");
         }
     }
@@ -61,6 +66,7 @@ public class LoginPage
                 Console.WriteLine("Employee Logged In");
                 // move to employee portal
                 new EmployeePortal(user);
+                Console.WriteLine();
                 Console.WriteLine("Employee Logged Out");
                 break;
             } 
@@ -71,6 +77,7 @@ public class LoginPage
                 Console.WriteLine("Manager Logged In");
                 // move ot manager portal
                 new ManagerPortal(user);
+                Console.WriteLine();
                 Console.WriteLine("Manager Logged Out");
                 break;
             }                 

@@ -21,4 +21,9 @@ namespace Models;
             Amount = amount;
             Status = status;
         }
+        public override string ToString()
+        {
+            string s = string.Format("UserName: {0} \nDateTime: {1} \nTitle: {2} \nDescription: {3} \nAmount: {4} \nStatus: {5}", UserName, TicketDateTime, Title, Description, Amount, Status);
+            return s;
+        } 
     }

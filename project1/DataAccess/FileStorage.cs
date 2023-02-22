@@ -118,7 +118,7 @@ namespace DataAccess;
             // Click the "Connect" button
             connection.Open();
 
-            using SqlCommand cmd = new SqlCommand("INSERT INTO ERT(UserName, DT, Title, Description, Amount, Status) VALUES (@username, @datetime, @title, @des, @amount, @status)", connection);
+            using SqlCommand cmd = new SqlCommand("INSERT INTO ERT(UserName, DT, Title, Descrip, Amount, CurStatus) VALUES (@username, @datetime, @title, @des, @amount, @status)", connection);
             cmd.Parameters.AddWithValue("@username", ert.UserName);
             cmd.Parameters.AddWithValue("@datetime", ert.TicketDateTime);
             cmd.Parameters.AddWithValue("@title", ert.Title);
@@ -127,7 +127,71 @@ namespace DataAccess;
             cmd.Parameters.AddWithValue("@status", ert.Status);
             cmd.ExecuteNonQuery();
         }
- 
+
+        public List<ERT> GetAllTicketsByUsername(string username, List<ERT> ert)
+        {
+            // Equivalent to opening Azure Data Studio and filling out the new connection form
+            using SqlConnection connection = new SqlConnection(hide.getdbConnection()); 
+            // Click the "Connect" button
+            connection.Open();
+
+            using SqlCommand cmd = new SqlCommand("SELECT * FROM ERT WHERE UserName = @username", connection);
+            cmd.Parameters.AddWithValue("@username", username);
+
+            using SqlDataReader reader = cmd.ExecuteReader();
+            while(reader.Read()) 
+            {
+                ert.Add(new ERT {
+                    UserName = (string) reader["UserName"],
+                    TicketDateTime = (DateTime) reader["DT"],
+                    Title = (string) reader["Title"],
+                    Description = (string) reader["Descrip"],
+                    Amount = (decimal) reader["Amount"],
+                    Status = (string) reader["CurStatus"],
+                });
+            }
+
+            return ert;
+        }
+        public List<ERT> GetAllPendingERT(List<ERT> ert)
+        {
+            string stat = "Pending";
+            // Equivalent to opening Azure Data Studio and filling out the new connection form
+            using SqlConnection connection = new SqlConnection(hide.getdbConnection()); 
+            // Click the "Connect" button
+            connection.Open();
+
+            using SqlCommand cmd = new SqlCommand("SELECT * FROM ERT WHERE CurStatus = @status", connection);
+            cmd.Parameters.AddWithValue("@status", stat);
+
+            using SqlDataReader reader = cmd.ExecuteReader();
+            while(reader.Read()) 
+            {
+                ert.Add(new ERT {
+                    UserName = (string) reader["UserName"],
+                    TicketDateTime = (DateTime) reader["DT"],
+                    Title = (string) reader["Title"],
+                    Description = (string) reader["Descrip"],
+                    Amount = (decimal) reader["Amount"],
+                    Status = (string) reader["CurStatus"],
+                });
+            }
+            return ert;
+        }
+
+        public void updateTicketStatusinDB(string username, DateTime dt, string status)
+        {
+            // Equivalent to opening Azure Data Studio and filling out the new connection form
+            using SqlConnection connection = new SqlConnection(hide.getdbConnection()); 
+            // Click the "Connect" button
+            connection.Open();
+
+            using SqlCommand cmd = new SqlCommand("UPDATE ERT SET CurStatus = @status WHERE DT = @datetime AND UserName = @username", connection);
+            cmd.Parameters.AddWithValue("@status", status);
+            cmd.Parameters.AddWithValue("@datetime", dt);
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.ExecuteNonQuery();
+        }
     }
 
 

@@ -71,4 +71,7 @@ public class DBRepository : IRepository
     public void createUserinDB(User user){throw new NotImplementedException();}
     public User getUserinDB(string username){throw new NotImplementedException();}
     public void createERTinDB(ERT ert){throw new NotImplementedException();}
+    public List<ERT> GetAllTicketsByUsername(string username, List<ERT> ert){throw new NotImplementedException();}
+    public List<ERT> GetAllPendingERT(List<ERT> ert){throw new NotImplementedException();}
+    public void updateTicketStatusinDB(string username, DateTime dt, string status){throw new NotImplementedException();}
 }
