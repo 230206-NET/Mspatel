@@ -3,29 +3,29 @@ using Services;
 namespace UI;
     public class MainMenu
     {
-        private readonly TicketService _service;
+        //private readonly TicketService _service;
         //private List<TicketSession> tic = new();
-        public MainMenu(TicketService service) {
-        _service = service;
+        public MainMenu() {
+        //_service = service;
         }
         public void Start()
         {
             // Login Screen
-            LoginInfo log = new LoginInfo();
+            User login = new User();
 
             Console.WriteLine("Username: ");
             string user = Console.ReadLine();
             Console.WriteLine("Password: ");
             string pass = Console.ReadLine();
 
-            log.Username = user;
-            log.Password = pass;
+            login.UserName = user;
+            login.Password = pass;
 
             Console.WriteLine("User : " + user);
-            Console.WriteLine("Username : " + log.Username);
+            Console.WriteLine("Username : " + login.UserName);
 
             Console.WriteLine("Pass : " + pass);
-            Console.WriteLine("Password : " + log.Password);
+            Console.WriteLine("Password : " + login.Password);
 
             // After Lpgin
             while(true) 
@@ -47,7 +47,7 @@ namespace UI;
                     
                     case "2":
                         // ToDo: Modify Existing Workout
-                        SearchTicketsByName();
+                       // SearchTicketsByName();
                     break;
                     case "3":
                         // TODO: Veiw all tickets
@@ -67,17 +67,17 @@ namespace UI;
                 }
             }
         }
-        private void SearchTicketsByName() 
-        {
-            Console.WriteLine("Which Ticket would you like to serach for?");
-            string input = Console.ReadLine();
+        // private void SearchTicketsByName() 
+        // {
+        //     Console.WriteLine("Which Ticket would you like to serach for?");
+        //     string input = Console.ReadLine();
 
-            List<TicketSession> sessions = _service.SearchTicketsByName(input);
+        //     List<TicketSession> sessions = _service.SearchTicketsByName(input);
 
-            foreach(TicketSession s in sessions) {
-                Console.WriteLine(s);
-            }
-        }
+        //     foreach(TicketSession s in sessions) {
+        //         Console.WriteLine(s);
+        //     }
+        // }
         private void CreateNewTicket()
         {
             TicketSession session = new TicketSession();
@@ -127,7 +127,7 @@ namespace UI;
                 if(more.ToLower()[0] == 'n') break;
             }
 
-            _service.CreateNewSession(session);
+           // _service.CreateNewSession(session);
             Console.WriteLine(session);
         }
     }

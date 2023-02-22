@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using Models;
 using Serilog;
+using System.Data.SqlClient;
 
 namespace DataAccess;
 // In this project, all we'll do is getting and persisting data
@@ -11,7 +12,8 @@ namespace DataAccess;
 
     public class FileStorage : IRepository
     {
-        private const string _filePath = "../DataAccess/TicketLogs.json";
+        //private const string _filePath = "../DataAccess/TicketLogs.json";
+        private const string _filePath = "../DataAccess/UserLogs.json";
         public FileStorage() {
             // I want to write my data in JSON format
             // The process of converting data to string/bit for transportation or persistence is called Serialization
@@ -19,7 +21,7 @@ namespace DataAccess;
 
             // When we initialize this class, let's make sure the file we want to modify exists, and if not, let's create it.
             // File is an example of unmanaged resource, aka CLR (common language runtime does not garbage collect it for you. You have to manually close/dispose it)
-            Log.Information("Instantiating File Storage Class");
+           // Log.Information("Instantiating File Storage Class");
             bool fileExists = File.Exists(_filePath);
 
             if(!fileExists) {
@@ -29,7 +31,7 @@ namespace DataAccess;
         }
 
         public List<TicketSession> GetAllTicket() {
-            Log.Information("File Storage: Retrieving all ticket sessions");
+           // Log.Information("File Storage: Retrieving all ticket sessions");
             // Open the file, read the content, close the file
             string fileContent = File.ReadAllText(_filePath);
 
@@ -38,7 +40,7 @@ namespace DataAccess;
         }
 
         public void CreateNewSession(TicketSession sessionToCreate) {
-            Log.Information("File Storage: creating a new ticket session");
+           // Log.Information("File Storage: creating a new ticket session");
             // Reading from an existing file and deserializing it as list of ticket
             List<TicketSession> sessions = GetAllTicket();
             // Adding new ticket session
@@ -48,4 +50,115 @@ namespace DataAccess;
             string content = JsonSerializer.Serialize(sessions);
             File.WriteAllText(_filePath, content);
         }
+        public List<User> GetAllUser() {
+           // Log.Information("File Storage: Retrieving all ticket sessions");
+            // Open the file, read the content, close the file
+            string fileContent = File.ReadAllText(_filePath);
+
+            // The read string, and deserialize it back to List of workout sessions
+            return JsonSerializer.Deserialize<List<User>>(fileContent);
+        }
+        public void CreateNewUser(User user) {
+           // Log.Information("File Storage: creating a new ticket session");
+            // Reading from an existing file and deserializing it as list of ticket
+            List<User> sessions = GetAllUser();
+            // Adding new ticket session
+            sessions.Add(user);
+
+            // Serializing the list as string and writing it back to the file
+            string content = JsonSerializer.Serialize(sessions);
+            File.WriteAllText(_filePath, content);
+        }
+
+        public void createUserinDB(User user)
+        {
+            // Equivalent to opening Azure Data Studio and filling out the new connection form
+            using SqlConnection connection = new SqlConnection(hide.getdbConnection()); 
+            // Click the "Connect" button
+            connection.Open();
+
+            //string cmd = "SELECT UserName, Passwor, FirstName, LastName, Position FROM UserAccount WHERE UserName = @username";
+            using SqlCommand cmd = new SqlCommand("INSERT INTO UserAccount(UserName, Passwor, FirstName, LastName, Position) VALUES (@Username, @Password, @firstname, @lastname, @position)", connection);
+            cmd.Parameters.AddWithValue("@Username", user.UserName);
+            cmd.Parameters.AddWithValue("@Password", user.Password);
+            cmd.Parameters.AddWithValue("@firstname", user.FirstName);
+            cmd.Parameters.AddWithValue("@lastname", user.LastName);
+            cmd.Parameters.AddWithValue("@position", user.Position);
+            cmd.ExecuteNonQuery();
+
+        }
+        public User getUserinDB(string username)
+        {
+            User user = new User();
+            using SqlConnection connection = new SqlConnection(hide.getdbConnection()); 
+            // Click the "Connect" button
+            connection.Open();
+
+            using SqlCommand cmd = new SqlCommand("SELECT UserName, Passwor, FirstName, LastName, Position FROM UserAccount WHERE UserName = @username", connection);
+            cmd.Parameters.AddWithValue("@username", username);
+
+            using SqlDataReader reader = cmd.ExecuteReader();
+
+            if(reader.Read()) 
+            {
+                user = new User(
+                    user.UserName = (string) reader["UserName"],
+                    user.Password = (string) reader["Passwor"],
+                    user.FirstName = (string) reader["FirstName"],
+                    user.LastName = (string) reader["LastName"],
+                    user.Position = (string) reader["Position"]
+                );
+            }
+            return user;
+        }
+        public void createERTinDB(ERT ert)
+        {
+            // Equivalent to opening Azure Data Studio and filling out the new connection form
+            using SqlConnection connection = new SqlConnection(hide.getdbConnection()); 
+            // Click the "Connect" button
+            connection.Open();
+
+            using SqlCommand cmd = new SqlCommand("INSERT INTO ERT(UserName, DT, Title, Description, Amount, Status) VALUES (@username, @datetime, @title, @des, @amount, @status)", connection);
+            cmd.Parameters.AddWithValue("@username", ert.UserName);
+            cmd.Parameters.AddWithValue("@datetime", ert.TicketDateTime);
+            cmd.Parameters.AddWithValue("@title", ert.Title);
+            cmd.Parameters.AddWithValue("@des", ert.Description);
+            cmd.Parameters.AddWithValue("@amount", ert.Amount);
+            cmd.Parameters.AddWithValue("@status", ert.Status);
+            cmd.ExecuteNonQuery();
+        }
+ 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
