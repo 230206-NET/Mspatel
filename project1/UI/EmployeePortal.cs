@@ -1,5 +1,5 @@
-using Models;
-using DataAccess;
+//using Models;
+//using DataAccess;
 using Services;
 namespace UI;
 public class EmployeePortal
@@ -21,20 +21,24 @@ public class EmployeePortal
             
             string? input = Console.ReadLine();
             if(input == "1"){
-                // create new ticket to submitt
+                // Obtain date time with now to get current
                 DateTime dt = DateTime.Now;
+                // set status ticket to pending variable
                 string status = "Pending";
+                // submit the ticket with user's username with datetime and status to insert to database
                 submitTicket(user.UserName, dt, status);
                 //break;
             }
             else if(input == "2")
             {
-                    // view all tickets submitted from employee
+                    // view all tickets that are submitted by this EMployee User
+                    // this is where you find all the tickets updated or not updates status on tickets's approval
                     getAllEmployeeTickets(user.UserName);
                     //break;
             }
             else if(input == "x")
             {
+                // Log Out From Employee Portal
                 break;
             }
             else {
@@ -52,9 +56,10 @@ public class EmployeePortal
         string? des = Console.ReadLine();
         Console.WriteLine("Enter Amount: ");
         decimal amount = 0;
+        // variable amount will get the output from user's input of amount
         decimal.TryParse(Console.ReadLine(), out amount);
-        //Console.WriteLine(amount);
         Console.WriteLine("Submitting Ticket From User...");
+        // Insert ert data into database
         file.createERTinDB(new ERT(username, dts, title, des, amount, currentstatus));
         Console.WriteLine("Submit Processed");
         Console.WriteLine();
@@ -64,10 +69,22 @@ public class EmployeePortal
     {
         Console.WriteLine("Retrieving Employee {0} Submitted Tickets", username);
         List<ERT> list = new();
+        // insert username and list so that the list is updated and gets the new data of ERTs from database
         file.GetAllTicketsByUsername(username, list);
-        foreach(ERT ert in list){
+        // Check to see if List was increased from database else employee has no submitted tickets with their username connected to them
+        if(list.Count > 0)
+        {
+            // Print to console each ERT in updated list
+            foreach(ERT ert in list){
+                Console.WriteLine();
+                Console.WriteLine(ert.ToString());
+                Console.WriteLine();
+                Thread.Sleep(2000);
+            }
+        }
+        else{
             Console.WriteLine();
-            Console.WriteLine(ert.ToString());
+            Console.WriteLine("Found No Submitted Tickets From Employee");
             Console.WriteLine();
         }
     }

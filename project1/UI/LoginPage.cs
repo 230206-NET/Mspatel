@@ -1,5 +1,5 @@
-using Models;
-using DataAccess;
+//using Models;
+//using DataAccess;
 using Services;
 namespace UI;
 public class LoginPage
@@ -49,39 +49,64 @@ public class LoginPage
         if(userin == false)
         {
             Console.WriteLine();
-            Console.WriteLine("No Account Found Matching this Username");
+            Console.WriteLine("No Account Found Matching Username/Password");
         }
     }
 
     private bool UserCredSame(string usname, string pass, string postitiontype)
     {
-        List<User> loglist = file.GetAllUser();
         bool status = false;
-        foreach(User acc in loglist)
+        // List<User> loglist = file.GetAllUser();
+        // foreach(User acc in loglist)
+        // {
+        //     if(usname == acc.UserName && pass == acc.Password && postitiontype == acc.Position && postitiontype == "Employee")
+        //     {
+        //         status = true;
+        //         User user = file.getUserinDB(usname);
+        //         Console.WriteLine("Employee Logged In");
+        //         // move to employee portal
+        //         new EmployeePortal(user);
+        //         Console.WriteLine();
+        //         Console.WriteLine("Employee Logged Out");
+        //         break;
+        //     } 
+        //     else if(usname == acc.UserName && pass == acc.Password && postitiontype == acc.Position && postitiontype == "Manager")
+        //     {
+        //         status = true;
+        //         User user = file.getUserinDB(usname);
+        //         Console.WriteLine("Manager Logged In");
+        //         // move ot manager portal
+        //         new ManagerPortal(user);
+        //         Console.WriteLine();
+        //         Console.WriteLine("Manager Logged Out");
+        //         break;
+        //     }                 
+        // }
+        User user = file.getUserinDB(usname);
+        if(usname == user.UserName && pass == user.Password && postitiontype == user.Position && postitiontype == "Employee")
         {
-            if(usname == acc.UserName && pass == acc.Password && postitiontype == acc.Position && postitiontype == "Employee")
-            {
-                status = true;
-                User user = file.getUserinDB(usname);
-                Console.WriteLine("Employee Logged In");
-                // move to employee portal
-                new EmployeePortal(user);
-                Console.WriteLine();
-                Console.WriteLine("Employee Logged Out");
-                break;
-            } 
-            else if(usname == acc.UserName && pass == acc.Password && postitiontype == acc.Position && postitiontype == "Manager")
-            {
-                status = true;
-                User user = file.getUserinDB(usname);
-                Console.WriteLine("Manager Logged In");
-                // move ot manager portal
-                new ManagerPortal(user);
-                Console.WriteLine();
-                Console.WriteLine("Manager Logged Out");
-                break;
-            }                 
-        }
+            status = true;
+            //User user = file.getUserinDB(usname);
+            Console.WriteLine("Employee Logged In");
+            Console.WriteLine();
+            // move to employee portal
+            new EmployeePortal(user);
+            Console.WriteLine();
+            Console.WriteLine("Employee Logged Out");
+            //break;
+        } 
+        else if(usname == user.UserName && pass == user.Password && postitiontype == user.Position && postitiontype == "Manager")
+        {
+            status = true;
+            //User user = file.getUserinDB(usname);
+            Console.WriteLine("Manager Logged In");
+            Console.WriteLine();
+            // move ot manager portal
+            new ManagerPortal(user);
+            Console.WriteLine();
+            Console.WriteLine("Manager Logged Out");
+            //break;
+        }    
         return status;
     }
 }

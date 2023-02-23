@@ -1,4 +1,4 @@
-using DataAccess;
+//using DataAccess;
 using System;
 namespace UI;
 public class FrontScreen
@@ -18,15 +18,15 @@ public class FrontScreen
             switch(input)
             {
                 case "1":
-                    // move to login page
+                    // Launch Login Page
                     new LoginPage();
                 break;
                 case "2":
-                    // move to register page for users
+                    // Launch Register Page
                     new RegisterPage();
                 break;
                 case "x":
-                    // exit and terminate code 
+                    // Exit and Terminate Code 
                     Environment.Exit(0);
                 break;
                 default:

@@ -1,5 +1,5 @@
-using Models;
-using DataAccess;
+//using Models;
+//using DataAccess;
 using Services;
 namespace UI;
 public class ManagerPortal
@@ -7,20 +7,25 @@ public class ManagerPortal
     private FileStorage file = new FileStorage();
     public ManagerPortal(User user)
     {
+        Console.WriteLine();
          Console.WriteLine("User: {0} Has Logged In", user.UserName);
          Console.WriteLine("Welcome {0} {1} To Manager Portal", user.FirstName, user.LastName);
+         Console.WriteLine();
         while(true)
         {
             Console.WriteLine("Select One?");
             Console.WriteLine("[1] Approve/Reject Pending Ticket");
-            Console.WriteLine("[1] View All Tickets");
+            Console.WriteLine("[2] View All Submitted Tickets");
             Console.WriteLine("[x] Logout");
             
             string? input = Console.ReadLine();
             if(input == "1"){
                 // Portal to Manager Interaction with ticket
                 ManagerChoice();
-                //break;
+            }
+            else if(input == "2"){
+                // View all submitted tickets ordered by date and time
+                viewAllTicketsOrderedByDT();
             }
             else if(input == "x")
             {
@@ -34,6 +39,7 @@ public class ManagerPortal
     private void ManagerChoice()
     {
         Console.WriteLine("Retrieving All Submitted Pending Approval Tickets");
+        Console.WriteLine();
         List<ERT> pendingList = new();
         file.GetAllPendingERT(pendingList);
         if(pendingList.Count > 0){
@@ -68,6 +74,21 @@ public class ManagerPortal
         }
         else{
             Console.WriteLine("THERE ARE NO PENDING TICKETS");
+            Console.WriteLine();
+        }
+    }
+    private void viewAllTicketsOrderedByDT()
+    {
+        Console.WriteLine("Retrieving All Submitted Tickets From Employee");
+        Console.WriteLine();
+        List<ERT> list = new();
+        file.GetAllERTTickets(list);
+        foreach(ERT ert in list)
+        {
+            Console.WriteLine();
+            Console.WriteLine(ert.ToString());
+            Console.WriteLine();
+            Thread.Sleep(2000);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace DataAccess;
     public class FileStorage : IRepository
     {
         //private const string _filePath = "../DataAccess/TicketLogs.json";
-        private const string _filePath = "../DataAccess/UserLogs.json";
+        //private const string _filePath = "../DataAccess/UserLogs.json";
         public FileStorage() {
             // I want to write my data in JSON format
             // The process of converting data to string/bit for transportation or persistence is called Serialization
@@ -22,14 +22,14 @@ namespace DataAccess;
             // When we initialize this class, let's make sure the file we want to modify exists, and if not, let's create it.
             // File is an example of unmanaged resource, aka CLR (common language runtime does not garbage collect it for you. You have to manually close/dispose it)
            // Log.Information("Instantiating File Storage Class");
-            bool fileExists = File.Exists(_filePath);
+            // bool fileExists = File.Exists(_filePath);
 
-            if(!fileExists) {
-                var fs = File.Create(_filePath);
-                fs.Close();
-            }
+            // if(!fileExists) {
+            //     var fs = File.Create(_filePath);
+            //     fs.Close();
+            // }
         }
-
+/*
         public List<TicketSession> GetAllTicket() {
            // Log.Information("File Storage: Retrieving all ticket sessions");
             // Open the file, read the content, close the file
@@ -69,7 +69,7 @@ namespace DataAccess;
             string content = JsonSerializer.Serialize(sessions);
             File.WriteAllText(_filePath, content);
         }
-
+*/
         public void createUserinDB(User user)
         {
             // Equivalent to opening Azure Data Studio and filling out the new connection form
@@ -126,6 +126,28 @@ namespace DataAccess;
             cmd.Parameters.AddWithValue("@amount", ert.Amount);
             cmd.Parameters.AddWithValue("@status", ert.Status);
             cmd.ExecuteNonQuery();
+        }
+        public List<ERT> GetAllERTTickets(List<ERT> ert)
+        {
+            // Equivalent to opening Azure Data Studio and filling out the new connection form
+            using SqlConnection connection = new SqlConnection(hide.getdbConnection()); 
+            // Click the "Connect" button
+            connection.Open();
+            using SqlCommand cmd = new SqlCommand("SELECT * FROM ERT ORDER BY DT", connection);
+            using SqlDataReader reader = cmd.ExecuteReader();
+            while(reader.Read()) 
+            {
+                ert.Add(new ERT {
+                    UserName = (string) reader["UserName"],
+                    TicketDateTime = (DateTime) reader["DT"],
+                    Title = (string) reader["Title"],
+                    Description = (string) reader["Descrip"],
+                    Amount = (decimal) reader["Amount"],
+                    Status = (string) reader["CurStatus"],
+                });
+            }
+
+            return ert;
         }
 
         public List<ERT> GetAllTicketsByUsername(string username, List<ERT> ert)

@@ -1,5 +1,5 @@
-using Models;
-using DataAccess;
+//using Models;
+//using DataAccess;
 using Services;
 namespace UI;
 public class RegisterPage
@@ -16,6 +16,7 @@ public class RegisterPage
 
             string? input = Console.ReadLine();
             Console.WriteLine(input);
+            // check to see if input is matched with making a desired user account 
             if(input == "1")
             {
                     AccountType = "Employee";
@@ -36,31 +37,38 @@ public class RegisterPage
         Console.WriteLine("Enter your Last Name");
         string? lastName = Console.ReadLine();
         Console.WriteLine("Enter your Account Username");
-        string? username = Console.ReadLine()!;
+        string? username = Console.ReadLine();
+        // check to see if database has the same username or not 
         while(!checkForSameUsername(username)){
+            // Execute already taken username if username is matched and continous input until different username then in database
             Console.WriteLine("Username Already Taken: Try Again\n");
             Console.WriteLine("Enter your Account Username");
             username = Console.ReadLine();
         }
         Console.WriteLine("Enter your Account Password");
-        string? password = Console.ReadLine()!;
+        string? password = Console.ReadLine();
         Console.WriteLine("Creating New Account....");
         Console.WriteLine();
-        file.CreateNewUser(new User(username, password, firstName, lastName, AccountType));
+        //file.CreateNewUser(new User(username, password, firstName, lastName, AccountType));
         file.createUserinDB(new User(username, password, firstName, lastName, AccountType));
         Console.WriteLine("Account Created Returning to Front Screen\n");
         Console.WriteLine();
     }
-    public bool checkForSameUsername(string userName)
+    private bool checkForSameUsername(string userName)
     {
-        List<User> userslist = file.GetAllUser();
-        foreach(User user in userslist)
-        {
-            if (user.UserName == userName)
-            {
-                return false;
-            }
+        // get the user from database by input of username match then return false to exit out of while true loop
+        User user = file.getUserinDB(userName);
+        if(user.UserName == userName){
+            return false;
         }
+        // List<User> userslist = file.GetAllUser();
+        // foreach(User user in userslist)
+        // {
+        //     if (user.UserName == userName)
+        //     {
+        //         return false;
+        //     }
+        // }
         return true;
     }
 }
