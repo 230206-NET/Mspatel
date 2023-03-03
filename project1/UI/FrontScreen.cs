@@ -7,6 +7,7 @@ public class FrontScreen
     {
         while(true)
         {
+            Log.Information("Front Screen Interface");
             Console.WriteLine("\n");
             Console.WriteLine("Expense Reimbursement System Application");
             Console.WriteLine("What do you want to do?");
@@ -18,14 +19,17 @@ public class FrontScreen
             switch(input)
             {
                 case "1":
+                    Log.Information("Moving Into Login Page");
                     // Launch Login Page
                     new LoginPage();
                 break;
                 case "2":
+                    Log.Information("Moving Into Register Page");
                     // Launch Register Page
                     new RegisterPage();
                 break;
                 case "x":
+                    Log.Information("Exit Application");
                     // Exit and Terminate Code 
                     Environment.Exit(0);
                 break;

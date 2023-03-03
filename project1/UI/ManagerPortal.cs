@@ -5,6 +5,7 @@ namespace UI;
 public class ManagerPortal
 {
     private FileStorage file = new FileStorage();
+    private Service _service = new Service();
     public ManagerPortal(User user)
     {
         Console.WriteLine();
@@ -13,6 +14,7 @@ public class ManagerPortal
          Console.WriteLine();
         while(true)
         {
+            Log.Information("Manager Portal Interface");
             Console.WriteLine("Select One?");
             Console.WriteLine("[1] Approve/Reject Pending Ticket");
             Console.WriteLine("[2] View All Submitted Tickets");
@@ -20,11 +22,15 @@ public class ManagerPortal
             
             string? input = Console.ReadLine();
             if(input == "1"){
+                Log.Information("Moving To Manager Choice");
                 // Portal to Manager Interaction with ticket
+                //_service.ManagerChoice();
                 ManagerChoice();
             }
             else if(input == "2"){
+                Log.Information("Moving To View All Submitted Tickets");
                 // View all submitted tickets ordered by date and time
+                //_service.viewAllTicketsOrderedByDT();
                 viewAllTicketsOrderedByDT();
             }
             else if(input == "x")
@@ -38,6 +44,7 @@ public class ManagerPortal
     }
     private void ManagerChoice()
     {
+        Log.Information("Get All Submitted Pending Tickets");
         Console.WriteLine("Retrieving All Submitted Pending Approval Tickets");
         Console.WriteLine();
         List<ERT> pendingList = new();
@@ -77,8 +84,10 @@ public class ManagerPortal
             Console.WriteLine();
         }
     }
+
     private void viewAllTicketsOrderedByDT()
     {
+        Log.Information("Get All Submitted Ticket");
         Console.WriteLine("Retrieving All Submitted Tickets From Employee");
         Console.WriteLine();
         List<ERT> list = new();

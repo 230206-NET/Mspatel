@@ -5,6 +5,7 @@ namespace UI;
 public class EmployeePortal
 {
     private FileStorage file = new FileStorage();
+    private Service _service = new Service();
     public EmployeePortal(User user)
     {
         Console.WriteLine();
@@ -14,6 +15,7 @@ public class EmployeePortal
 
         while(true)
         {
+            Log.Information("Employee Portal Interface");
             Console.WriteLine("Select One?");
             Console.WriteLine("[1] Submit New Ticket");
             Console.WriteLine("[2] View All Submitted Tickets");
@@ -21,18 +23,22 @@ public class EmployeePortal
             
             string? input = Console.ReadLine();
             if(input == "1"){
-                // Obtain date time with now to get current
-                DateTime dt = DateTime.Now;
-                // set status ticket to pending variable
-                string status = "Pending";
+                Log.Information("Employee Moving to Submitting Ticket");
+                // // Obtain date time with now to get current
+                // DateTime dt = DateTime.Now;
+                // // set status ticket to pending variable
+                // string status = "Pending";
                 // submit the ticket with user's username with datetime and status to insert to database
-                submitTicket(user.UserName, dt, status);
+                //_service.submitTicket(user.UserName);
+                submitTicket(user.UserName);
                 //break;
             }
             else if(input == "2")
             {
+                Log.Information("Getting Employee's All Submitted Tickets");
                     // view all tickets that are submitted by this EMployee User
                     // this is where you find all the tickets updated or not updates status on tickets's approval
+                    //_service.getAllEmployeeTickets(user.UserName);
                     getAllEmployeeTickets(user.UserName);
                     //break;
             }
@@ -47,8 +53,13 @@ public class EmployeePortal
         }    
     }
 
-    private void submitTicket(string username, DateTime dts, string currentstatus)
+    private void submitTicket(string username)
     {
+        // Obtain date time with now to get current
+        DateTime dt = DateTime.Now;
+        // set status ticket to pending variable
+        string status = "Pending";
+        Log.Information("Submit Ticket Interface");
         Console.WriteLine();
         Console.WriteLine("Enter Ticket Title (ex.Plane Travel): ");
         string? title = Console.ReadLine();
@@ -60,13 +71,14 @@ public class EmployeePortal
         decimal.TryParse(Console.ReadLine(), out amount);
         Console.WriteLine("Submitting Ticket From User...");
         // Insert ert data into database
-        file.createERTinDB(new ERT(username, dts, title, des, amount, currentstatus));
+        file.createERTinDB(new ERT(username, dt, title, des, amount, status));
         Console.WriteLine("Submit Processed");
         Console.WriteLine();
     }
 
     private void getAllEmployeeTickets(string username)
     {
+        Log.Information("Getting All Employee Submitted Tickets List");
         Console.WriteLine("Retrieving Employee {0} Submitted Tickets", username);
         List<ERT> list = new();
         // insert username and list so that the list is updated and gets the new data of ERTs from database
