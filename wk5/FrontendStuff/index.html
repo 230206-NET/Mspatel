@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">ls
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #meetdiv {
+            background-color:black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            align-content: center;
+            color: aliceblue;
+        }
+        .btn {
+            color: aqua;
+            background-color: darkred;
+        }
+        .btn:hover {
+            color: coral;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a target="_blank" href="https://google.com"> TO Google in New Tab</a>
+    </header>
+    <div id="first_div">
+        <h1>Heading Tag</h1>
+    <p>paragragh tag</p>
+    <ul>
+        <li>Bullet Point List</li>
+    </ul>
+    <ol>
+        <li>Ordered Point List like 1,2,3,4,5</li>
+    </ol>
+    </div>
+    <div id="second div">
+        <h2>Heading Tag Smaller</h2>
+    </div>
+
+
+    <button class="btn" onclick="myFunction()">Meet Patel</button>
+
+    <div id="meetdiv" style="display: none;">
+    
+        <ul>
+            <li>Like Playing basketball</li>
+            <li>Like Playing Games</li>
+            <li>Like Reading Novels/Books</li>
+        </ul>
+    </div>
+    <p>SOmething</p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("meetdiv");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
